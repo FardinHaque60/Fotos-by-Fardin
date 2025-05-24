@@ -2,6 +2,8 @@
     Adding Image Protocol:
         - to add an image, add it to the public/images/ with the format IMG_i.JPG format
         - add the image metadata to the END of the variable `imageMeta` below
+        - to test how site would work, change all '/image/IMG_...' tags by appending public/ for testing purposes 
+            (vercel needs us to omit the public/ for hosting though)
     Done! The image should be visible on the page and able to be clicked
 */
 
@@ -46,10 +48,10 @@ for (let i = totalImages; i >= 0; i--) {
     // wrapper link for image
     const imgLink = document.createElement('a');
     imgLink.classList.add('image');
-    imgLink.href = `/public/images/IMG_${i}.jpg`;
+    imgLink.href = `/images/IMG_${i}.JPG`;
 
     const img = document.createElement('img');
-    img.src = `/public/images/IMG_${i}.jpg`;
+    img.src = `/images/IMG_${i}.JPG`;
     img.loading = "lazy";
 
     imgLink.appendChild(img);
