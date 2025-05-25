@@ -34,7 +34,8 @@ const imageMeta = [
     { title: "Candle", description: "Candle drippin' too hard. Taken November 2nd, 2024." },
     { title: "Concentrated Cane Sugar", description: "Whatchu' know about that jaggery GOOR. Taken November 2nd, 2024." },
     { title: "Squirrel", description: "Practicing the wildlife shots. Taken May 22, 2025." },
-    { title: "Crow", description: "Someone mistook this for a chicken, unbelievable. Taken May 22, 2025." }
+    { title: "Crow", description: "Someone mistook this for a chicken, unbelievable. Taken May 22, 2025." },
+    { title: "Munchin'", description: "Eating good. Taken May 25, 2025."}
 ];
 
 const totalImages = imageMeta.length;
@@ -48,10 +49,10 @@ for (let i = totalImages; i >= 0; i--) {
     // wrapper link for image
     const imgLink = document.createElement('a');
     imgLink.classList.add('image');
-    imgLink.href = `/images/IMG_${i}.JPG`;
+    imgLink.href = `images/IMG_${i}.JPG`;
 
     const img = document.createElement('img');
-    img.src = `/images/IMG_${i}.JPG`;
+    img.src = `images/IMG_${i}.JPG`;
     img.loading = "lazy";
 
     imgLink.appendChild(img);
