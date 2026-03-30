@@ -10,6 +10,11 @@
 const gallery = document.getElementById('main');
 
 const imageMeta = [
+    { title: "Slytherin", description: "Brother was slitherin'. Taken March 28th, 2026."},
+    { title: "Los Gatos Hills", description: "Dense shrubbery. Taken March 28th, 2026."},
+    { title: "Snake", description: "Quite a long snake. Taken March 28th, 2026."},
+    { title: "Spider", description: "Big body. Taken March 28th, 2026."},
+    { title: "Snakezard", description: "Snake with small legs. Taken March 28th, 2026."},
     { title: "On Guard", description: "Bird was lookin' sharp. Taken July 19th, 2025."},
     { title: "Lizard", description: "Bombastic side eye, criminal offensive side eye. Taken July 19th, 2025."},
     { title: "Bridge", description: "Nice scene with the bridge. Taken July 19th, 2025."},
@@ -59,8 +64,9 @@ for (let i = totalImages; i > 0; i--) {
     imgLink.classList.add('image');
     imgLink.href = `images/IMG_${i}.JPG`;
 
+    // thumbnail image
     const img = document.createElement('img');
-    img.src = `images/IMG_${i}.JPG`;
+    img.src = `images/thumbs/IMG_${i}.webp`;
     img.loading = "lazy";
 
     imgLink.appendChild(img);
