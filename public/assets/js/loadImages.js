@@ -10,6 +10,13 @@
 const gallery = document.getElementById('main');
 
 const imageMeta = [
+    { title: "Birds", description: "Taken July 5th, 2026."},
+    { title: "Twisty Road", description: "Taken July 5th, 2026."},
+    { title: "Stanford Campus", description: "Taken July 5th, 2026."},
+    { title: "San Mateo Bridge", description: "Taken July 5th, 2026."},
+    { title: "Hill Homes", description: "Cañada College parking lot. Taken July 5th, 2026."},
+    { title: "Santa Cruz Hills", description: "View from Castle Rock Trail, Saratoga. Taken June 28th, 2026."},
+    { title: "Dead Tree", description: "Pointy Tree. Taken June 28th, 2026."},
     { title: "Slytherin", description: "Brother was slitherin'. Taken March 28th, 2026."},
     { title: "Los Gatos Hills", description: "Dense shrubbery. Taken March 28th, 2026."},
     { title: "Snake", description: "Quite a long snake. Taken March 28th, 2026."},
